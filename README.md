@@ -28,12 +28,10 @@ pip install -r requirements.txt
 
 ## Running the code
 
-python train.py -d C1/cv_1 -e C1/cv_1 --gpu=0 --hop=3 --batch=512 --emb_dim=64 -b=10 -ne=30 --l2=0.0001 -l=3
-
 ```
 python train.py 
-    -d C1/cv_1            # dataset
-    -e C1/cv_1            # the name for the log for experiments
+    -d C1/cv_1           # evalution schem
+    -e C1/cv_1           # the name for the log for experiments
     --gpu=0              # ID of GPU
     --hop=3              # size of the hops for enclosing grpah
     --batch=512          # batch size for samples
