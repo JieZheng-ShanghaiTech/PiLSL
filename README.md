@@ -3,7 +3,7 @@
 
 PiLSL is a novel pairwise interaction learning-based graph neural network for SL prediction. As shown in the following illustration, PiLSL consists of three steps to learn the representations of pairwise interactions. First, we construct an enclosing graph for each pair of genes from a knowledge graph (KG). Secondly, we design an attentive embedding propagation layer in a GNN to discriminate the importance among the edges in the enclosing graph and learn the latent features of the pairwise interaction from the weighted enclosing graph. Finally, we further fuse the latent and explicit (multi-omics) features to obtain powerful representations for SL prediction.
 
-<img src="https://github.com/JieZheng-ShanghaiTech/PiLSL/blob/master/overview.jpg"/>
+<img src="https://github.com/JieZheng-ShanghaiTech/PiLSL/blob/main/overview.jpg"/>
 
 ## Dataset
 * SL data:  32,561 SL gene pairs involving 9,516 genes are used as our SL labels.
@@ -13,7 +13,7 @@ PiLSL is a novel pairwise interaction learning-based graph neural network for SL
 
 We use 5-fold cross-validation (CV) in the following three evaluation settings 
 
-<img src="https://github.com/JieZheng-ShanghaiTech/PiLSL/blob/master/evaluation_schems.jpg" width=60%/>
+<img src="https://github.com/JieZheng-ShanghaiTech/PiLSL/blob/main/evaluation_schems.jpg" width=60%/>
 
 | Evaluation schems  | Description
 |------- |----------|
