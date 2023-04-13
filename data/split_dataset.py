@@ -12,6 +12,8 @@ class SplitDataset():
 
     def SplitByPairs(self):
         df_sl = pd.read_csv(self.file_path, header=None)
+        # If no negtive samples, generate them randomly.
+        # df_sl = pd.DataFrame(self.generateNSByRandom(df_sl.values.tolist()))
         sl_np_x = df_sl[[0, 1]].to_numpy()
         sl_np_y = df_sl[2].to_numpy()
 
@@ -157,6 +159,7 @@ class SplitDataset():
             index += 1
 
 if __name__=='__main__':
+    # sl_pairs.csv : gene_a, gene_b, lable
     sl_split = SplitDataset('sl_pairs.csv')
     sl_split.SplitByGene()
     sl_split.SplitByPairs()
